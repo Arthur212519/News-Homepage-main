@@ -8,7 +8,7 @@
     }
     .header .header-container .menu{
         margin: 3rem 3rem 0 0;
-        /* display: block; */
+        display: block;
     }
     .header-container input:checked ~ul{
         display: block;
