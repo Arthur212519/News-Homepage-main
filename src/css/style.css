@@ -1,0 +1,163 @@
+html{
+    font-size: 62.5%;
+}
+body{
+  padding: 3rem 5rem;
+
+    font-family: 'Inter', sans-serif;
+    display:grid;
+    grid-template-areas: "header header header"
+    "new new trending"
+    "new new trending"
+    "popular popular popular";
+    column-gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* HEADER */
+.header{
+    grid-area: header;
+    margin-bottom: 4.5rem;
+}
+.header .header-container{
+    display:flex;
+    justify-content: space-between;
+       align-items: center;
+}
+.header .header-container nav ul{
+    margin-right: 0rem;
+    font-size:1.7rem;
+    font-weight: 400;
+    display:flex;
+    gap:3.5rem;
+}
+.header .header-container nav ul li a:hover{
+    color:var(--Soft-red);
+}
+#menu-hamburguer{
+    display: none;
+}
+.header .menu{
+    float:right;
+display:none;
+}
+/* NEW */
+.new{
+    grid-area: new;
+    display: flex;
+    flex-direction: column;
+}
+.new img{
+    max-width:100%;
+}
+.new .text-container{
+    margin-top: 3rem;
+    display:flex;
+}
+.new .text-container h1{
+    line-height:5.5rem ;
+    font-weight: 800;
+    font-size: 5.5rem;
+    color:var(--Very-dark-blue);
+}
+.new .text-container .text-notice p{
+    color:var(--Very-dark-blue);
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-left: 8rem;
+
+}
+.new .text-container .text-notice .read-more{
+    margin-top:5rem;
+    border:none;
+    font-weight: 700;
+    color: var(--Off-white);
+    background-color: var(--Soft-red);
+    letter-spacing: 0.5rem;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    margin-left:8rem;
+}
+.new .text-container .text-notice .read-more:hover{
+    background-color: var(--Very-dark-blue);
+}
+/* TRENDING */
+.trending{
+    background-color: var(--Very-dark-blue);
+    grid-area: trending;
+}
+.trending .trending-container{
+    color:var(--Off-white);
+    padding: 2.5rem 3rem;
+    display: flex;
+flex-direction: column;
+}
+.trending .trending-container .trending-text1,.trending .trending-container .trending-text2{
+    border-bottom: 1px solid var(--Grayish-blue);
+    padding-bottom: 3rem;
+
+}
+.trending .trending-container .trending-title{
+    color: var( --Soft-orange);
+    font-size: 4rem;
+    padding: 1rem;
+    margin:0;
+}
+.trending-text3{
+    padding-bottom: 3rem;
+}
+.trending-text1 h3,.trending-text2 h3,.trending-text3 h3{
+margin-top: 3rem;
+font-size: 2rem;
+}
+.trending-text1 h3:hover,.trending-text2 h3:hover,.trending-text3 h3:hover{color:var(--Soft-orange);
+}
+.trending-text1 p,.trending-text2 p,.trending-text3 p{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+/* POPULAR */
+.popular{
+    grid-area: popular;
+    padding-top: 4rem;
+    
+}
+.popular .popular-container{
+    display: flex;
+    justify-content: space-between;
+}
+.popular .popular-container .notice1,.popular .popular-container .notice2,.popular .popular-container .notice3{
+    display: flex;
+    margin-left: 2rem;
+}
+.popular .popular-container .notice1{
+    margin-left: 0;
+}
+.notice1 img,.notice2 img,.notice3 img{
+   max-width:10rem;
+}
+.notice1 .notice-text,.notice2 .notice-text,.notice3 .notice-text{
+    margin-left: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.notice1 .notice-text .number,.notice2 .notice-text .number,.notice3 .notice-text .number{
+    font-weight: 700;
+    color:var(--Grayish-blue);
+font-size:3rem;
+}
+.notice1 .notice-text h4,.notice2 .notice-text h4,.notice3 .notice-text h4{
+    font-weight: 700;
+    color:var(--Very-dark-blue);
+    font-size: 1.8rem;
+}
+.notice1 .notice-text h4:hover,.notice2 .notice-text h4:hover,.notice3 .notice-text h4:hover{
+    color: var(--Soft-red);
+}
+.notice1 .notice-text p,.notice2 .notice-text p,.notice3 .notice-text p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color:var(--Grayish-blue);
+}
